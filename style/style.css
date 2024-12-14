@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Advent Pro';
+    src: url(./../fonts/AdventPro-VariableFont_wdth\,wght.ttf) format('woff2');
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "OpenSans";
+    src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%; /* Устанавливаем высоту для html и body */
+    margin: 0; /* Убираем отступы */
+    overflow: hidden; /* Отключаем стандартную прокрутку */
+}
+
+body {
+    overflow-y: scroll; /* Включаем вертикальную прокрутку */
+}
+
+#fitness, #pet {
+    height: 100vh; /* Высота каждой секции на весь экран */
+    scroll-snap-align: start; /* Привязываем к началу секции */
+}
+
+body {
+    scroll-snap-type: y mandatory; /* Включаем snap-поведение для вертикальной прокрутки */
+}
+
+#buttonFitnes {
+    background-color: white;
+    border-radius: 10px;
+}
+
+#buttonFitnes:hover {
+    background-color: rgb(170, 170, 170);
+    border-radius: 10px;
+}
+
+#fitness {  
+    background-color: #212529;
+    min-height: 100vh;
+    font-family: "OpenSans";
+}
+
+#logoFit img {
+    width: 200px; /* Убедитесь, что логотип не выходит за пределы контейнера */
+    height: auto; /* Сохраняйте пропорции изображения */
+}
+
+#pet {
+    background-color: #2a2a2a;
+    min-height: 100vh;
+    font-family: "Advent Pro";
+    color: #efffec;
+}
+
+#buttonPet {
+    background-color: #609755;
+    color: #efffec;
+    border: 0;
+}
+
+#buttonPet:hover {
+    background-color: #4b8041;
+    color: #efffec;
+    border: 0;
+}
+
+#pet h1 {
+    font-weight: bold;
+}
+
+#logoFit {
+    background-color: #383b3f;
+}
+
+#logoPet {
+    background-color: #3f403e;
+}
+
+#logoPet img{
+    width: 200px;
+}
+
+#logoFit, #logoPet {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
